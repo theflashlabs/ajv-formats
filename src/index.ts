@@ -7,9 +7,9 @@ import {
   fullFormats,
 } from "./formats"
 import formatLimit from "./limit"
-import type Ajv from "ajv"
-import type {Plugin, Format} from "ajv"
-import {_, Name} from "ajv/dist/compile/codegen"
+import type Ajv from "@theflashlabs/ajv-plus"
+import type {Plugin, Format} from "@theflashlabs/ajv-plus"
+import {_, Name} from "@theflashlabs/ajv-plus/dist/compile/codegen"
 
 export {FormatMode, FormatName} from "./formats"
 export {LimitFormatError} from "./limit"

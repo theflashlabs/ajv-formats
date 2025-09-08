@@ -1,5 +1,5 @@
 const jsonSchemaTest = require("json-schema-test")
-const Ajv = require("ajv").default
+const Ajv = require("@theflashlabs/ajv-plus").default
 const addFormats = require("../dist")
 
 jsonSchemaTest(getAjv(), {

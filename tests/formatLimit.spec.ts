@@ -1,4 +1,4 @@
-import Ajv from "ajv"
+import Ajv from "@theflashlabs/ajv-plus"
 import {fullFormats, fastFormats} from "../dist/formats"
 import formatLimit from "../dist/limit"
 import ajvFormats from "../dist"

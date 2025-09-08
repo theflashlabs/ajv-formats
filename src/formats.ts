@@ -1,5 +1,5 @@
-import type {Format, FormatDefinition} from "ajv"
-import type {FormatValidator, FormatCompare} from "ajv/dist/types"
+import type {Format, FormatDefinition} from "@theflashlabs/ajv-plus"
+import type {FormatValidator, FormatCompare} from "@theflashlabs/ajv-plus/dist/types"
 
 export type FormatMode = "fast" | "full"
 
