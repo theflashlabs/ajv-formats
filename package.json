@@ -1,6 +1,6 @@
 {
   "name": "@theflashlabs/ajv-formats",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Format validation for Ajv-Plus",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -33,6 +33,9 @@
     "url": "https://github.com/theflashlabs/ajv-formats/issues"
   },
   "homepage": "https://github.com/theflashlabs/ajv-formats#readme",
+  "dependencies": {
+    "@theflashlabs/ajv-plus": "^0.0.1"
+  },
   "peerDependencies": {
     "@theflashlabs/ajv-plus": "^0.0.1"
   },
