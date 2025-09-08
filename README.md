@@ -1,21 +1,21 @@
 # ajv-formats
 
-JSON Schema formats for Ajv
+JSON Schema formats for Ajv-Plus
 
 [![Build Status](https://travis-ci.org/ajv-validator/ajv-formats.svg?branch=master)](https://travis-ci.org/ajv-validator/ajv-formats)
 [![npm](https://img.shields.io/npm/v/ajv-formats.svg)](https://www.npmjs.com/package/ajv-formats)
 [![Gitter](https://img.shields.io/gitter/room/ajv-validator/ajv.svg)](https://gitter.im/ajv-validator/ajv)
-[![GitHub Sponsors](https://img.shields.io/badge/$-sponsors-brightgreen)](https://github.com/sponsors/epoberezkin)
+[![GitHub Sponsors](https://img.shields.io/badge/$-sponsors-brightgreen)](https://github.com/sponsors/bavulapati)
 
 ## Usage
 
 ```javascript
 // ESM/TypeScript import
-import Ajv from "ajv"
-import addFormats from "ajv-formats"
+import Ajv from "@theflashlabs/ajv-plus"
+import addFormats from "@theflashlabs/ajv-formats"
 // Node.js require:
-const Ajv = require("ajv")
-const addFormats = require("ajv-formats")
+const Ajv = require("@theflashlabs/ajv-plus")
+const addFormats = require("@theflashlabs/ajv-formats")
 
 const ajv = new Ajv()
 addFormats(ajv)
@@ -51,7 +51,7 @@ The package defines these formats:
 - _password_: password string according to the [openApi 3.0.0 specification](https://spec.openapis.org/oas/v3.0.0#data-types)
 - _binary_: binary string according to the [openApi 3.0.0 specification](https://spec.openapis.org/oas/v3.0.0#data-types)
 
-See regular expressions used for format validation and the sources that were used in [formats.ts](https://github.com/ajv-validator/ajv-formats/blob/master/src/formats.ts).
+See regular expressions used for format validation and the sources that were used in [formats.ts](https://github.com/theflashlabs/ajv-formats/blob/master/src/formats.ts).
 
 **Please note**: JSON Schema draft-07 also defines formats `iri`, `iri-reference`, `idn-hostname` and `idn-email` for URLs, hostnames and emails with international characters. These formats are available in [ajv-formats-draft2019](https://github.com/luzlab/ajv-formats-draft2019) plugin.
 
@@ -63,12 +63,12 @@ These keywords are added to ajv instance when ajv-formats is used without option
 
 These keywords apply only to strings. If the data is not a string, the validation succeeds.
 
-The value of keywords `formatMaximum`/`formatMinimum` and `formatExclusiveMaximum`/`formatExclusiveMinimum` should be a string or [$data reference](https://github.com/ajv-validator/ajv/blob/master/docs/guide/combining-schemas.md#data-reference). This value is the maximum (minimum) allowed value for the data to be valid as determined by `format` keyword. If `format` keyword is not present schema compilation will throw exception.
+The value of keywords `formatMaximum`/`formatMinimum` and `formatExclusiveMaximum`/`formatExclusiveMinimum` should be a string or [$data reference](https://github.com/theflashlabs/ajv-plus/blob/master/docs/guide/combining-schemas.md#data-reference). This value is the maximum (minimum) allowed value for the data to be valid as determined by `format` keyword. If `format` keyword is not present schema compilation will throw exception.
 
-When these keyword are added, they also add comparison functions to formats `"date"`, `"time"` and `"date-time"`. User-defined formats also can have comparison functions. See [addFormat](https://github.com/ajv-validator/ajv/blob/master/docs/api.md#api-addformat) method.
+When these keyword are added, they also add comparison functions to formats `"date"`, `"time"` and `"date-time"`. User-defined formats also can have comparison functions. See [addFormat](https://github.com/theflashlabs/ajv-plus/blob/main/docs/api.md#api-addformat) method.
 
 ```javascript
-require("ajv-formats")(ajv)
+require("@theflashlabs/ajv-formats")(ajv)
 
 const schema = {
   type: "string",
@@ -122,4 +122,4 @@ npm test
 
 ## License
 
-[MIT](https://github.com/ajv-validator/ajv-formats/blob/master/LICENSE)
+[MIT](https://github.com/theflashlabs/ajv-formats/blob/master/LICENSE)
