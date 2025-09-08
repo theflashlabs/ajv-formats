@@ -1,4 +1,4 @@
-import type Ajv from "ajv"
+import type Ajv from "@theflashlabs/ajv-plus"
 import type {
   Plugin,
   CodeKeywordDefinition,
@@ -6,11 +6,11 @@ import type {
   Code,
   Name,
   ErrorObject,
-} from "ajv"
-import type {AddedFormat} from "ajv/dist/types"
-import type {Rule} from "ajv/dist/compile/rules"
-import {KeywordCxt} from "ajv"
-import {_, str, or, getProperty, operators} from "ajv/dist/compile/codegen"
+} from "@theflashlabs/ajv-plus"
+import type {AddedFormat} from "@theflashlabs/ajv-plus/dist/types"
+import type {Rule} from "@theflashlabs/ajv-plus/dist/compile/rules"
+import {KeywordCxt} from "@theflashlabs/ajv-plus"
+import {_, str, or, getProperty, operators} from "@theflashlabs/ajv-plus/dist/compile/codegen"
 
 type Kwd = "formatMaximum" | "formatMinimum" | "formatExclusiveMaximum" | "formatExclusiveMinimum"
 

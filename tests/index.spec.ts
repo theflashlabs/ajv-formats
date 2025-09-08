@@ -1,4 +1,4 @@
-import Ajv, {FormatDefinition} from "ajv"
+import Ajv, {FormatDefinition} from "@theflashlabs/ajv-plus"
 import addFormats from "../dist"
 import type {FormatName} from "../dist"
 

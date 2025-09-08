@@ -1,4 +1,4 @@
-import Ajv from "ajv"
+import Ajv from "@theflashlabs/ajv-plus"
 import addFormats from "../../dist"
 
 describe("PR #617, full date format validation should understand leap years", () => {
