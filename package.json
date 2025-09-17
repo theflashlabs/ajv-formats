@@ -36,11 +36,6 @@
   "peerDependencies": {
     "@theflashlabs/ajv-plus": "^0.0.3"
   },
-  "peerDependenciesMeta": {
-    "@theflashlabs/ajv-plus": {
-      "optional": true
-    }
-  },
   "devDependencies": {
     "@ajv-validator/config": "^0.3.0",
     "@types/jest": "^26.0.5",
